@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charrt - Real-time Chart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Real-time Data Visualization</h1>
+        <p>Connect your data source to the WebSocket URL below to see your data in real-time.</p>
+        <div class="websocket-url-container">
+            <input type="text" id="websocket-url" readonly>
+            <button id="copy-button">Copy</button>
+        </div>
+        <div class="chart-container">
+            <canvas id="myChart"></canvas>
+        </div>
+        <div class="y-axis-controls">
+            <label for="y-min">Y-Min:</label>
+            <input type="number" id="y-min" name="y-min">
+            <label for="y-max">Y-Max:</label>
+            <input type="number" id="y-max" name="y-max">
+            <button id="apply-y-axis">Apply</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@^2.3.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@^1.0.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-streaming@^2.0.0"></script>
+    <script src="main.js"></script>
+</body>
+</html>

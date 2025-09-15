@@ -1,0 +1,15 @@
+{
+  "name": "charrt",
+  "version": "1.0.0",
+  "description": "A real-time charting application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "ws": "^8.14.2",
+    "uuid": "^9.0.1",
+    "chartjs-adapter-luxon": "^1.3.1",
+    "chartjs-plugin-streaming": "^2.0.0"
+  }
+}

@@ -1,0 +1,108 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    color: #1c1e21;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #606770;
+    margin-bottom: 30px;
+}
+
+.websocket-url-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#websocket-url {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px 0 0 6px;
+    font-size: 16px;
+    background-color: #f5f6f7;
+    color: #606770;
+}
+
+#copy-button {
+    padding: 10px 20px;
+    border: 1px solid #3578e5;
+    background-color: #3578e5;
+    color: #fff;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#copy-button:hover {
+    background-color: #285fba;
+}
+
+#copy-button.copied {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.chart-container {
+    position: relative;
+    height: 40vh;
+    width: 100%;
+}
+
+.y-axis-controls {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.y-axis-controls label {
+    font-size: 14px;
+}
+
+.y-axis-controls input {
+    width: 80px;
+    padding: 8px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.y-axis-controls button {
+    padding: 8px 16px;
+    border: 1px solid #3578e5;
+    background-color: #3578e5;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.y-axis-controls button:hover {
+    background-color: #285fba;
+}
